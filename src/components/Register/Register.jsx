@@ -41,7 +41,7 @@ function Register() {
     return Object.keys(errs).length === 0;
   };
 
-  // Manual signup submit
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (!validate()) {
@@ -64,7 +64,7 @@ function Register() {
     }
   };
 
-  // Google signup/login success
+  // Google signup/login 
   const handleGoogleSuccess = async (credentialResponse) => {
     const token = credentialResponse.credential;
     try {

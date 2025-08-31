@@ -20,10 +20,10 @@ const ContactUs = () => {
     event.preventDefault();
 
     try {
-      const res = await axios.post(EndPoint.CONTACT, contact); // 🔄 use `contact`
+      const res = await axios.post(EndPoint.CONTACT, contact);
       console.log(res);
       toast.success("Message sent successfully!");
-      setContact({ first: "", last: "", email: "", message: "" }); // clear form
+      setContact({ first: "", last: "", email: "", message: "" }); 
     } catch (err) {
       console.error(err);
       toast.error("Something went wrong!");

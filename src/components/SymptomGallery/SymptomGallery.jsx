@@ -40,7 +40,7 @@ const SymptomGallery = () => {
       <div className="container mt-5 pt-3">
         <div className="row text-center justify-content-center">
 
-          {/* ✅ Left Section - Gemini */}
+          {/* Left Section - Gemini */}
           <div className="col-md-5 p-4 bg-light rounded shadow-sm mx-4 mt-3">
             <h5>Want AI-Powered Personalized Suggestions?</h5>
             <p>Click the button below to chat with Gemini and get smart health tips!</p>
@@ -52,7 +52,7 @@ const SymptomGallery = () => {
             </button>
           </div>
 
-          {/* ✅ Right Section - Medical Report Analyzer */}
+          {/* Right Section - Medical Report Analyzer */}
           <div className="col-md-5 p-4 bg-light rounded shadow-sm mx-4 mt-3">
             <h5>Analyze Your Medical Reports</h5>
             <p>Upload and analyze your health reports for a quick summary & suggestions.</p>

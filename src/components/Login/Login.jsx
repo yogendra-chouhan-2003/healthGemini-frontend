@@ -70,7 +70,7 @@ const LoginForm = () => {
       console.log("token :",token);
       console.log("response",res);
       sessionStorage.setItem("current-user", JSON.stringify(res.data.user));
-      localStorage.setItem("authToken", res.data.token); // 👈 backend JWT save
+      localStorage.setItem("authToken", res.data.token); 
       toast.success("Google login successful!");
 
       navigate("/home");
