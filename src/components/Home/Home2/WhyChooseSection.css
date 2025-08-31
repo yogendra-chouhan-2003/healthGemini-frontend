@@ -1,0 +1,226 @@
+/* Container */
+.whychoose-container {
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Heading & Subheading */
+.whychoose-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.whychoose-subheading {
+  text-align: center;
+  margin-top: 20px;
+  color: #070707;
+  font-size: 1rem;
+}
+
+/* Tabs */
+.whychoose-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 300px;
+  margin-top: 50px;
+}
+
+.tab {
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 5px;
+  color: #111;
+  transition: color 0.3s;
+}
+
+.tab::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007BFF;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.tab:hover::after {
+  width: 100%;
+}
+
+/* Content (Left + Right) */
+.whychoose-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 50px;
+}
+
+/* Left Content */
+.left {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+.left h3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.left p {
+  margin: 20px 0;
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.try-btn {
+  background-color: #4C63D2;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+/* Right Content (Chat Box) */
+.right {
+  flex: 1;
+  min-width: 280px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.chat-box {
+  background-color: #C3DCE8;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.chat-row {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.message {
+  flex: 1;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.time {
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.bubble {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-top: 5px;
+  max-width: 100%;
+}
+
+.user .bubble {
+  background-color: #00B8A9;
+  color: white;
+}
+
+.bot .bubble {
+  background-color: #00B8A9;
+  color: white;
+}
+
+
+
+.typing .bubble {
+  font-size: 1.2rem;
+}
+
+.i2 {
+  height: 30px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .whychoose-content {
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .whychoose-heading {
+    font-size: 2rem;
+  }
+
+  .whychoose-subheading {
+    font-size: 0.95rem;
+  }
+
+  .whychoose-content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .left,
+  .right {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .chat-box {
+    width: 100%;
+  }
+
+  .tab {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .whychoose-heading {
+    font-size: 1.6rem;
+  }
+
+  .whychoose-subheading {
+    font-size: 0.9rem;
+  }
+
+  .try-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .tab {
+    font-size: 0.85rem;
+    padding: 5px 8px;
+  }
+}
